@@ -1,101 +1,111 @@
 # Arihant Hospital Website
 
-A modern, responsive hospital website built with Next.js and Tailwind CSS, featuring bilingual support (English/Marathi) and comprehensive healthcare service information.
+A modern, static hospital website built with HTML, Tailwind CSS, and TypeScript. Features bilingual support (English and Marathi), mobile-responsive design, and dedicated service pages.
 
-## 🌟 Features
+## 🚀 Features
 
-- **Bilingual Support**: Full English and Marathi language support with easy toggle switch
-- **Responsive Design**: Mobile-first design that works on all devices
-- **Modern UI**: Clean, professional design using Tailwind CSS
-- **Comprehensive Services**: Showcases all 15 specified medical services
-- **Contact Forms**: Interactive contact form for patient inquiries
-- **Emergency Contact**: Prominent emergency contact information
-- **Performance Optimized**: Built with Next.js for optimal performance
+- **Modern Design**: Clean, professional healthcare website design
+- **Bilingual Support**: Full English and Marathi language support with dynamic switching  
+- **Mobile Responsive**: Optimized for all device sizes
+- **Static Site**: Fast loading, no server dependencies
+- **Service Pages**: Dedicated pages for all 15 medical services
+- **TypeScript**: Type-safe JavaScript for better code quality
+- **Tailwind CSS**: Utility-first CSS framework for consistent styling
 
-## 🏥 Services Offered
+## 🏥 Services
 
-The website showcases the following healthcare services:
+The website includes dedicated pages for the following services:
 
-1. Hyperdeficiency (हायपरडेफिशिअन्सी)
-2. C-Arm Machine (सी-आर्म मशीन)
-3. Medicine (औषधोपचार)
-4. ECG (ईसीजी)
-5. Orthopedics (हाडांचे आणि सांध्यांचे उपचार)
-6. Ventilators (व्हेंटिलेटर)
-7. Surgery (शस्त्रक्रिया)
-8. Defibrillator (डिफिब्रिलेटर)
-9. ENT (कान, नाक, गळा)
-10. Equipped Operation Theatre (सुसज्ज ऑपरेशन थिएटर)
-11. Dental Care (दंत चिकित्सा)
-12. Digital X-ray Machine (डिजिटल एक्स-रे मशीन)
-13. Cancer Treatment (कर्करोग उपचार)
-14. All Blood Test (सर्व रक्त तपासणी)
-15. Ambulances (रुग्णवाहिका)
+1. **Hyperdeficiency Treatment** (हायपरडेफिशिअन्सी उपचार)
+2. **C-Arm Machine Services** (सी-आर्म मशीन सेवा)  
+3. **General Medicine** (सामान्य औषधोपचार)
+4. **ECG Services** (ईसीजी सेवा)
+5. **Orthopedic Care** (हाडे रोग विभाग)
+6. **Ventilator Support** (व्हेंटिलेटर सपोर्ट)
+7. **Surgical Services** (शस्त्रक्रिया सेवा)
+8. **Defibrillator Services** (डिफिब्रिलेटर सेवा)
+9. **ENT Services** (कान नाक गळा विभाग)
+10. **Modern Operation Theatre** (आधुनिक ऑपरेशन थिएटर)
+11. **Dental Care Services** (दंत चिकित्सा सेवा)
+12. **Digital X-ray Services** (डिजिटल एक्स-रे सेवा)
+13. **Cancer Treatment** (कर्करोग उपचार)
+14. **Blood Testing Laboratory** (रक्त तपासणी प्रयोगशाळा)
+15. **Ambulance Services** (रुग्णवाहिका सेवा)
 
-## 🚀 Getting Started
+## 📁 File Structure
 
-### Prerequisites
-
-- Node.js 18+ and npm
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/amitpatil79/Arihant-hospital-website-.git
-cd Arihant-hospital-website-
+```
+dist/                          # Main website files
+├── index.html                 # Main homepage
+├── js/
+│   ├── main.js               # Main site JavaScript
+│   ├── service.js            # Service pages JavaScript  
+│   └── translations.js       # Language translations
+├── services/                 # Service pages
+│   ├── service-template.html # Service page template
+│   ├── hyperdeficiency.html
+│   ├── c-arm-machine.html
+│   ├── medicine.html
+│   └── ... (all 15 services)
+└── README.md                 # Documentation
 ```
 
-2. Install dependencies:
-```bash
-npm install
-```
+## 🚀 Quick Start
 
-3. Run the development server:
-```bash
-npm run dev
-```
+To run the site locally:
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+1. Navigate to the `dist` directory
+2. Start a local web server:
+   ```bash
+   # Using Python 3
+   python -m http.server 8080
+   
+   # Using Node.js (if you have http-server installed)
+   npx http-server -p 8080
+   
+   # Using PHP  
+   php -S localhost:8080
+   ```
+3. Open http://localhost:8080 in your browser
 
-### Build for Production
+## 🌐 Deployment
 
-```bash
-npm run build
-npm start
-```
+This is a static website that can be deployed to any web hosting service:
 
-## 🛠️ Technology Stack
+- **GitHub Pages**: Upload to a GitHub repository and enable Pages
+- **Netlify**: Drag and drop the `dist` folder  
+- **Vercel**: Import the project and set build output directory to `dist`
+- **Traditional Web Hosting**: Upload the `dist` folder contents to your web root
 
-- **Framework**: Next.js 15.5.4
-- **Styling**: Tailwind CSS
-- **Language**: TypeScript
-- **Deployment**: Static Site Generation (SSG)
+## 🌍 Language Support
 
-## 📱 Features Overview
+The website supports two languages:
+- **English (EN)**: Default language
+- **Marathi (मर)**: Regional language support
 
-### Language Toggle
-- Seamless switching between English and Marathi
-- Preserves user preference during session
-- Professional bilingual UI
+Users can switch between languages using the toggle buttons in the header. Language preference is saved in browser local storage.
 
-### Responsive Design
-- Mobile-first approach
-- Hamburger menu for mobile navigation
-- Optimized layouts for desktop, tablet, and mobile
+## 📱 Browser Support
 
-### Contact & Emergency
-- Emergency contact prominently displayed
-- Contact form with validation
-- Multiple contact methods (phone, email, address)
-- 24/7 emergency services highlighted
+- Modern browsers (Chrome, Firefox, Safari, Edge)
+- Mobile browsers (iOS Safari, Chrome Mobile, etc.)
+- Progressive enhancement for older browsers
+
+## 🛠 Technologies Used
+
+- **HTML5**: Semantic markup
+- **Tailwind CSS**: Utility-first CSS framework via CDN
+- **JavaScript/TypeScript**: Modern ES6+ features
+- **Local Storage**: For language preference persistence
+- **CDN**: Tailwind CSS loaded from CDN for easy deployment
+
+## 📞 Contact Information
+
+- **Address**: 123 Hospital Street, Medical District, Mumbai, Maharashtra 400001
+- **Phone**: +91 22 1234 5678
+- **Emergency**: +91 9876543210  
+- **Email**: info@arihanthospital.com
 
 ## 📄 License
 
-This project is licensed under the MIT License.
-
-## 📞 Contact
-
-For questions about this website:
-- Email: info@arihanthospital.com  
-- Emergency: +91 9876543210
+© 2024 Arihant Hospital. All rights reserved.

@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Arihant Hospital Website
 
-## Getting Started
+A modern, responsive hospital website built with Next.js and Tailwind CSS, featuring bilingual support (English/Marathi) and comprehensive healthcare service information.
 
-First, run the development server:
+## 🌟 Features
 
+- **Bilingual Support**: Full English and Marathi language support with easy toggle switch
+- **Responsive Design**: Mobile-first design that works on all devices
+- **Modern UI**: Clean, professional design using Tailwind CSS
+- **Comprehensive Services**: Showcases all 15 specified medical services
+- **Contact Forms**: Interactive contact form for patient inquiries
+- **Emergency Contact**: Prominent emergency contact information
+- **Performance Optimized**: Built with Next.js for optimal performance
+
+## 🏥 Services Offered
+
+The website showcases the following healthcare services:
+
+1. Hyperdeficiency (हायपरडेफिशिअन्सी)
+2. C-Arm Machine (सी-आर्म मशीन)
+3. Medicine (औषधोपचार)
+4. ECG (ईसीजी)
+5. Orthopedics (हाडांचे आणि सांध्यांचे उपचार)
+6. Ventilators (व्हेंटिलेटर)
+7. Surgery (शस्त्रक्रिया)
+8. Defibrillator (डिफिब्रिलेटर)
+9. ENT (कान, नाक, गळा)
+10. Equipped Operation Theatre (सुसज्ज ऑपरेशन थिएटर)
+11. Dental Care (दंत चिकित्सा)
+12. Digital X-ray Machine (डिजिटल एक्स-रे मशीन)
+13. Cancer Treatment (कर्करोग उपचार)
+14. All Blood Test (सर्व रक्त तपासणी)
+15. Ambulances (रुग्णवाहिका)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ and npm
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/amitpatil79/Arihant-hospital-website-.git
+cd Arihant-hospital-website-
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+### Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Technology Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Framework**: Next.js 15.5.4
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Deployment**: Static Site Generation (SSG)
 
-## Deploy on Vercel
+## 📱 Features Overview
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Language Toggle
+- Seamless switching between English and Marathi
+- Preserves user preference during session
+- Professional bilingual UI
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Responsive Design
+- Mobile-first approach
+- Hamburger menu for mobile navigation
+- Optimized layouts for desktop, tablet, and mobile
+
+### Contact & Emergency
+- Emergency contact prominently displayed
+- Contact form with validation
+- Multiple contact methods (phone, email, address)
+- 24/7 emergency services highlighted
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 📞 Contact
+
+For questions about this website:
+- Email: info@arihanthospital.com  
+- Emergency: +91 9876543210
